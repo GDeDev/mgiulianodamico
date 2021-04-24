@@ -95,6 +95,7 @@ img {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 .hover-in-shadow:hover:after {
   box-shadow: var(--inner-shadow);
@@ -114,6 +115,7 @@ img {
   border-radius: 30px;
   transition: all 0.3s ease;
   display: inline-block;
+  border: none;
 }
 .btn-1:after {
   border-radius: 30px;
@@ -1081,4 +1083,163 @@ Popup Section
   right: 15px;
 }
 
-/* MINUTO 58.08 4 VIDEO */
+/*-------------
+Testimonial Section
+---------------*/
+.testimonial-section {
+  padding: 200px 0 80px;
+  min-height: 100vh;
+}
+.testimonial-section .testi-box {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.testimonial-section .testi-slider {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.testimonial-section .testi-slider-container {
+  display: flex;
+  transition: margin 1s ease;
+  align-items: center;
+}
+.testimonial-section .testi-item {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+.testimonial-section .testi-item i {
+  position: absolute;
+  font-size: 30px;
+  color: var(--text-black-600);
+  opacity: 0.1;
+}
+.testimonial-section .testi-item i.left {
+  left: 5px;
+  top: 5px;
+}
+.testimonial-section .testi-item i.right {
+  right: 5px;
+  bottom: 5px;
+}
+.testimonial-section .testi-item p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-black-600);
+  margin: 0 0 30px;
+}
+.testimonial-section .testi-item img {
+  max-width: 70px;
+  display: inline-block;
+  width: 100%;
+}
+.testimonial-section .testi-item span {
+  display: block;
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-black-700);
+  text-transform: capitalize;
+}
+.testimonial-section .testi-slider-nav {
+  margin-top: 30px;
+  text-align: center;
+}
+.testimonial-section .testi-slider-nav span {
+  height: 40px;
+  width: 40px;
+  color: var(--skin-color);
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+.testimonial-section .testi-slider-nav span:after {
+  border-radius: 50%;
+}
+.testimonial-section .testi-slider-nav span i {
+  line-height: 40px;
+}
+
+/*-------------
+Contact Section
+---------------*/
+.contact-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.contact-section .contact-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+}
+.contact-section .contact-item-inner {
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact-section .contact-item-inner i {
+  font-size: 25px;
+  color: var(--skin-color);
+}
+.contact-section .contact-item-inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 10px 0 5px;
+  text-transform: capitalize;
+}
+.contact-section .contact-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
+.contact-section .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 50px;
+}
+.contact-section .w-50 {
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact-section .input-group {
+  margin: 0 0 25px;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+.contact-section .input-group:after {
+  border-radius: 30px;
+}
+.contact-section .input-group .input-control {
+  height: 45px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0 15px;
+  color: var(--text-black-700);
+}
+.contact-section .input-group textarea.input-control {
+  height: 184px;
+  padding-top: 15px;
+  resize: none;
+}
+.contact-section .submit-btn {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: right;
+  padding: 0 15px;
+}
