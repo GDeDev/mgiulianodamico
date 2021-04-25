@@ -21,6 +21,7 @@
   color: var(--text-black-900);
   right: 100%;
   margin-right: 15px;
+  margin-top: -10px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 50%;
@@ -31,11 +32,11 @@
 .style-switcher .s-icon:after {
   border-radius: 50%;
 }
-.style-switcher .style-switcher-toggler {
+.style-switcher .style-toggler {
   top: 0;
 }
 .style-switcher .day-night {
-  top: 55px;
+  top: 65px;
 }
 .style-switcher h4 {
   margin: 0 0 10px;
