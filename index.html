@@ -8,6 +8,44 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Switcher -->
+    <link rel="stylesheet" href="css/style-switcher.css" />
+    <!-- Style switcher - for demo purposes only -->
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="color-1"
+      href="css/skins/color-1.css"
+      
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="color-2"
+      href="css/skins/color-2.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="color-3"
+      href="css/skins/color-3.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="color-4"
+      href="css/skins/color-4.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="color-5"
+      href="css/skins/color-5.css"
+      disabled
+    />
   </head>
   <body>
     <!-- Header  -->
@@ -29,22 +67,46 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="" class="inner-shadow active">Home</a></li>
-          <li><a href="" class="outer-shadow hover-in-shadow">About</a></li>
-          <li><a href="" class="outer-shadow hover-in-shadow">Services</a></li>
-          <li><a href="" class="outer-shadow hover-in-shadow">Portfolio</a></li>
           <li>
-            <a href="" class="outer-shadow hover-in-shadow">Testimonial</a>
+            <a href="#home" class="link-item inner-shadow active">Home</a>
           </li>
-          <li><a href="" class="outer-shadow hover-in-shadow">Contact</a></li>
+          <li>
+            <a href="#about" class="link-item outer-shadow hover-in-shadow"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="link-item outer-shadow hover-in-shadow"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonial"
+              class="link-item outer-shadow hover-in-shadow"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="link-item outer-shadow hover-in-shadow"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
       <!-- Copyright text -->
       <p class="copyright-text">&copy; 2021 GDeDev</p>
     </nav>
+    <div class="fade-out-effect"></div>
+
     <!-- Navigation menu End -->
     <!-- Home Section Start -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <!-- Effect wrap start -->
       <div class="effect-wrap">
         <div class="effect effect-1"></div>
@@ -100,7 +162,9 @@
             <p>Hola</p>
             <h2>Soy GdeDev</h2>
             <h1>Programador y Growth Marketer</h1>
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#about"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >Más sobre mi</a
             >
           </div>
@@ -118,7 +182,7 @@
     </section>
     <!-- Home Section End -->
     <!-- About section start -->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -171,7 +235,9 @@
             <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow"
               >Descargar CV</a
             >
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#contact"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >Contactame</a
             >
           </div>
@@ -376,7 +442,7 @@
     </section>
     <!-- About section end -->
     <!-- Service section start -->
-    <section class="service-section section">
+    <section class="service-section section" id="services">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -473,7 +539,7 @@
     </section>
     <!-- Service section end -->
     <!-- Portfolio section start -->
-    <div class="portfolio-section section">
+    <div class="portfolio-section section" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -845,7 +911,7 @@
     </div>
     <!-- Portfolio section end -->
     <!-- Testimonial section start -->
-    <div class="testimonial-section section">
+    <div class="testimonial-section section" id="testimonial">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -911,7 +977,7 @@
     </div>
     <!-- Testimonial section end -->
     <!-- Contact section start -->
-    <section class="contact-section section">
+    <section class="contact-section section" id="contact">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -1059,6 +1125,25 @@
       </div>
     </div>
     <!-- Portfolio popup end -->
+    <!-- style switcher start - for demo purposes only -->
+    <div class="style-switcher outer-shadow">
+      <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon outer-shadow hover-in-shadow">
+        <i class="fas "></i>
+      </div>
+
+      <h4>theme colores</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- style switcher end -->
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- style switcher js -->
