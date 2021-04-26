@@ -353,6 +353,8 @@ header
   border-radius: 50%;
   justify-content: center;
   transition: all 0.3s ease;
+
+  background-color: var(--bg-black-50);
 }
 .header .hamburger-btn:after {
   border-radius: 50%;
@@ -879,13 +881,11 @@ Portfolio Section
   margin-bottom: 40px;
 }
 .portfolio-section .portfolio-filter {
-  padding: 30px;
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
 }
 .portfolio-section .filter-item {
-  margin: 0 5px 10px;
   padding: 5px 10px;
   border-radius: 30px;
   cursor: pointer;
@@ -1061,6 +1061,8 @@ Popup Section
 .portfolio-popup .info {
   flex: 0 0 35%;
   max-width: 35%;
+
+  padding: 0 15px;
 }
 .portfolio-popup .info ul li {
   display: block;
