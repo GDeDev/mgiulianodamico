@@ -79,11 +79,6 @@
     left: -30px;
     right: auto;
   }
-
-  .filter-item {
-    padding-bottom: 50px;
-  }
-
 }
 
 @media (max-width: 574px) {
