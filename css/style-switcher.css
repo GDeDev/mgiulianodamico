@@ -8,13 +8,17 @@
   border-radius: 5px;
   transition: all 0.3s ease;
   transform: translateX(100%);
+
   background-color: var(--bg-black-50);
+
 }
 .style-switcher.open {
   transform: translateX(-15px);
 }
 .style-switcher .s-icon {
+
   background-color: var(--bg-black-50);
+
   position: absolute;
   height: 40px;
   width: 40px;
@@ -39,7 +43,9 @@
 }
 .style-switcher .day-night {
   top: 65px;
+
   background-color: var(--bg-black-50);
+
 }
 .style-switcher h4 {
   margin: 0 0 10px;
