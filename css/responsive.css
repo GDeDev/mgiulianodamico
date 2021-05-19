@@ -32,7 +32,7 @@
   .home-section .full-screen {
     padding: 100px 0;
   }
-  .home-section.home-img .img-box {
+  .home-section .home-img .img-box {
     margin-bottom: 40px;
     max-width: 350px;
   }
@@ -78,6 +78,9 @@
     .timeline-item-inner:before {
     left: -30px;
     right: auto;
+  }
+  .portfolio-popup .pp-main{
+    min-height: 0;
   }
 }
 

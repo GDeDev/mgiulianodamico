@@ -62,17 +62,17 @@
   cursor: pointer;
 }
 .style-switcher .color-1 {
-  background-color: #fb839e;
+  background-color: #FB3640;
 }
 .style-switcher .color-2 {
-  background-color: #ec9412;
+  background-color: #FF57BB;
 }
 .style-switcher .color-3 {
-  background-color: #1fc586;
+  background-color: #00E8FC;
 }
 .style-switcher .color-4 {
-  background-color: #2eb1ed;
+  background-color: #33312E ;
 }
 .style-switcher .color-5 {
-  background-color: #cc3a3b;
-}
+  background-color: #DFE0E2;
+} 

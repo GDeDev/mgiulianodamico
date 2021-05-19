@@ -330,12 +330,12 @@ header
   z-index: 99;
 }
 
-.header .logo a {
+.header .logo a img {
   display: inline-block;
   text-align: center;
   line-height: 36px;
-  height: 40px;
-  width: 40px;
+  height: 70px;
+  width: 70px;
   font-size: 24px;
   color: var(--skin-color);
   border-radius: 50%;
@@ -689,7 +689,8 @@ About Section
   top: 0;
   font-size: 16px;
   font-weight: 500;
-  color: var(--text-black-600);
+  color: var(--skin-color);
+  
   margin-top: -40px;
 }
 .about-section .education,
@@ -1276,8 +1277,9 @@ Contact Section
 }
 
 .contact-section .contact-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 100%;
+  max-width: 60%;
+  margin: auto;
   padding: 15px;
   display: flex;
 }
