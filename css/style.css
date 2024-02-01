@@ -599,7 +599,7 @@ About Section
 }
 .about-section .about-info {
   flex: 0 0 60%;
-  max-width: 60%;
+  max-width: 50%;
   max-height: 10%;
   padding: 0 15px;
 }
